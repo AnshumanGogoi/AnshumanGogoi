@@ -10,7 +10,7 @@ import allure
 class Test_001_Login:
     #baseURL = "https://www.udemy.com/join/login-popup/?locale=en_US&response_type=html&next=https%3A%2F%2Fwww.udemy.com%2F"
     #username = "gogoi.anshuman21@gmail.com"
-    #password = "sunny@08642"
+    #password = "sunny"
     baseURL = ReadConfig.getApplicationURL()
     #print(baseURL)
     username = ReadConfig.getUsername()
@@ -25,6 +25,7 @@ class Test_001_Login:
         #self.driver = webdriver.Chrome(ChromeDriverManager().install())
         #self.logger.info("***************Test_001_Login*******************")
         #self.logger.info("***************Verifying Home Page*******************")
+        """ initialize driver"""
         self.driver = setup
         #self.driver.maximize_window()
         self.driver.get(self.baseURL)
@@ -45,7 +46,7 @@ class Test_001_Login:
         self.driver = setup
         #self.driver.maximize_window()
         self.driver.get(self.baseURL)
-        # object creation of LoginPage.py
+        """  object creation of LoginPage.py """
         self.lp = LoginPage(self.driver)
         self.lp.setUserName(self.username)
         self.lp.setPassword(self.password)
