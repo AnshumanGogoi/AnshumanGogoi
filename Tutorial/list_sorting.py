@@ -1,6 +1,6 @@
 # Python Program to Sort List in Ascending Order
 
-NumList = []
+NumList = [10,2,6,88, 99]
 
 Number = int(input("Please enter the Total Number of List Elements: "))
 for i in range(1, Number + 1):

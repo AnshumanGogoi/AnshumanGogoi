@@ -2,11 +2,11 @@
 sentance = "i love my country"
 words = sentance.split(" ")
 ####################
-# print(words)
-# words=words[-1::-1]
-# print(words)
-# outputstr=" ".join(words)
-# print(outputstr)
+print(words)
+words=words[::-1]
+print(words)
+outputstr=" ".join(words)
+print(outputstr)
 
 """i evol ym yrtnuoc"""
 rev_str =[]

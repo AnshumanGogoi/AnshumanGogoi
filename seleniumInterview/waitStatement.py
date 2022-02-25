@@ -13,3 +13,5 @@ finally:
     driver.quit()
 
 driver.implicitly_wait(10)
+
+WebDriverWait(driver, 7, poll_frequency=5).until(EC.alert_is_present(), 'Timed out waiting for simple alert to appear')

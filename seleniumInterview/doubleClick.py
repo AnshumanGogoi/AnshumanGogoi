@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver import ActionChains
+from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 #browser exposes an executable file
 #Through Selenium test we will invoke the executable file which will then
@@ -13,6 +14,7 @@ driver.get("https://www.tutorialspoint.com/index.htm")
 driver.refresh()
 # identifying the source element
 source= driver.find_element_by_xpath("//*[text()='GATE Exams']");
+driver.find_element(By.XPATH,'')
 # action chain object creation
 action = ActionChains(driver)
 # double click operation and perform

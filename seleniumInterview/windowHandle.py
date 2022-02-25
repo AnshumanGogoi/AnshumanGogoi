@@ -12,9 +12,9 @@ driver.get("https://www.amazon.in/s?k=iPhone+13&ref=nb_sb_noss_1")
 #search = driver.find_element_by_id("nav-search-submit-button")
 #search.click()
 current_window = driver.current_window_handle
-driver.find_element(By.XPATH,"/html/body/div[1]/div[2]/div[1]/div[1]/div/span[3]/"
-                             "div[2]/div[2]/div/span/div/div/div/div/div[2]/div[2]/div/div/div[1]/h2/a/span").click()
+driver.find_element(By.XPATH,"/html/body/div[1]/div[2]/div[1]/div[1]/div/span[3]/div[2]/div[2]/div/span/div/div/div/div/div[2]/div[2]/div/div/div[1]/h2/a/span").click()
 child_windows = driver.window_handles
+print(child_windows)
 for child in child_windows:
     if current_window!=child:
         driver.switch_to.window(child)
